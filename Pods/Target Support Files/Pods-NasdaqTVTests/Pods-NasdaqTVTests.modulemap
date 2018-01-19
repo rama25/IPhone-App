@@ -1,0 +1,6 @@
+framework module Pods_NasdaqTVTests {
+  umbrella header "Pods-NasdaqTVTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_NasdaqTV {
+  umbrella header "Pods-NasdaqTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

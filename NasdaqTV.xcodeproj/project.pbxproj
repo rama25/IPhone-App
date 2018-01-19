@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F6A714CB66CC68325B2D7DB /* Pods_NasdaqTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB0E58F3D6062D2817540FF /* Pods_NasdaqTV.framework */; };
+		8AF402A72BD0D3548C03C097 /* Pods_Preview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141E7DEE61F63D0ABE5748A2 /* Pods_Preview.framework */; };
+		920D4C441F0FBCF3009DF592 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D4C431F0FBCF3009DF592 /* Movie.swift */; };
+		92647AA31F08AE2B0010535E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92647AA21F08AE2B0010535E /* AppDelegate.swift */; };
+		92647AA51F08AE2B0010535E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92647AA41F08AE2B0010535E /* ViewController.swift */; };
+		92647AA81F08AE2B0010535E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92647AA61F08AE2B0010535E /* Main.storyboard */; };
+		92647AAA1F08AE2B0010535E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92647AA91F08AE2B0010535E /* Assets.xcassets */; };
+		92647AB51F08AE2B0010535E /* NasdaqTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92647AB41F08AE2B0010535E /* NasdaqTVTests.swift */; };
+		92647AC01F08AE2C0010535E /* NasdaqTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92647ABF1F08AE2C0010535E /* NasdaqTVUITests.swift */; };
+		92647ACE1F08B13A0010535E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92647ACD1F08B13A0010535E /* MovieCell.swift */; };
+		B3B7ECDB1F16242500608CE6 /* SSYoutubeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7ECDA1F16242500608CE6 /* SSYoutubeParser.swift */; };
+		B3B7ECDD1F1624DB00608CE6 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B7ECDC1F1624DB00608CE6 /* PlayerViewController.swift */; };
+		B3B7ECE11F16255000608CE6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B7ECE01F16255000608CE6 /* AVFoundation.framework */; };
+		B3C5B34C1F15B5AA00490866 /* TVServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C5B34B1F15B5AA00490866 /* TVServices.framework */; };
+		B3C5B34F1F15B5AA00490866 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C5B34E1F15B5AA00490866 /* ServiceProvider.swift */; };
+		B3C5B3531F15B5AA00490866 /* Preview.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B3C5B3491F15B5A900490866 /* Preview.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B3D16FC81F149A4200DD4DA7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D16FC71F149A4200DD4DA7 /* DetailViewController.swift */; };
+		B576A4B2F931BB9A6510A9D8 /* Pods_NasdaqTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484BFDBF06447A8BBF469EFA /* Pods_NasdaqTVTests.framework */; };
+		CCDACF182D2C03DF097A147B /* Pods_NasdaqTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A13B55EA2E51A813CC5484 /* Pods_NasdaqTVUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92647AB11F08AE2B0010535E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92647A971F08AE2B0010535E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92647A9E1F08AE2B0010535E;
+			remoteInfo = test;
+		};
+		92647ABC1F08AE2C0010535E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92647A971F08AE2B0010535E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92647A9E1F08AE2B0010535E;
+			remoteInfo = test;
+		};
+		B3C5B3511F15B5AA00490866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92647A971F08AE2B0010535E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3C5B3481F15B5A900490866;
+			remoteInfo = Preview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3B7ECD91F161BD100608CE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C5B3571F15B5AA00490866 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B3C5B3531F15B5AA00490866 /* Preview.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		038AC963DEEB35E057684E2F /* Pods-NasdaqTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasdaqTVUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasdaqTVUITests/Pods-NasdaqTVUITests.release.xcconfig"; sourceTree = "<group>"; };
+		141E7DEE61F63D0ABE5748A2 /* Pods_Preview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Preview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA5F3E776536D10D416AD1F /* Pods-Preview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preview.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Preview/Pods-Preview.debug.xcconfig"; sourceTree = "<group>"; };
+		3A51BBA204D11BD5E67259A1 /* Pods-NasdaqTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasdaqTVUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasdaqTVUITests/Pods-NasdaqTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		484BFDBF06447A8BBF469EFA /* Pods_NasdaqTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasdaqTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E5E71996BAAB6B2ED34505 /* Pods-NasdaqTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasdaqTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasdaqTV/Pods-NasdaqTV.debug.xcconfig"; sourceTree = "<group>"; };
+		6DCA4F85D5F24F5B16257C69 /* Pods-NasdaqTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasdaqTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasdaqTVTests/Pods-NasdaqTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		920D4C431F0FBCF3009DF592 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		92647A9F1F08AE2B0010535E /* NasdaqTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasdaqTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92647AA21F08AE2B0010535E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92647AA41F08AE2B0010535E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92647AA71F08AE2B0010535E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92647AA91F08AE2B0010535E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92647AAB1F08AE2B0010535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92647AB01F08AE2B0010535E /* NasdaqTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasdaqTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92647AB41F08AE2B0010535E /* NasdaqTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasdaqTVTests.swift; sourceTree = "<group>"; };
+		92647AB61F08AE2B0010535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92647ABB1F08AE2C0010535E /* NasdaqTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NasdaqTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92647ABF1F08AE2C0010535E /* NasdaqTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NasdaqTVUITests.swift; path = testUITests/NasdaqTVUITests.swift; sourceTree = SOURCE_ROOT; };
+		92647AC11F08AE2C0010535E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92647ACD1F08B13A0010535E /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		9708DAD91E8FB232AA796600 /* Pods-NasdaqTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasdaqTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NasdaqTVTests/Pods-NasdaqTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BB0E58F3D6062D2817540FF /* Pods_NasdaqTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasdaqTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B7ECDA1F16242500608CE6 /* SSYoutubeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSYoutubeParser.swift; sourceTree = "<group>"; };
+		B3B7ECDC1F1624DB00608CE6 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		B3B7ECE01F16255000608CE6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B3C5B3491F15B5A900490866 /* Preview.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Preview.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3C5B34B1F15B5AA00490866 /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
+		B3C5B34E1F15B5AA00490866 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServiceProvider.swift; path = ../Preview/ServiceProvider.swift; sourceTree = "<group>"; };
+		B3C5B3501F15B5AA00490866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D16FC71F149A4200DD4DA7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B4A13B55EA2E51A813CC5484 /* Pods_NasdaqTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasdaqTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6729BD3FF9E38F6A9E21B8F /* Pods-Preview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preview.release.xcconfig"; path = "Pods/Target Support Files/Pods-Preview/Pods-Preview.release.xcconfig"; sourceTree = "<group>"; };
+		C2D9577CAD73FC5F3967A2BD /* Pods-NasdaqTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasdaqTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-NasdaqTV/Pods-NasdaqTV.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92647A9C1F08AE2B0010535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B7ECE11F16255000608CE6 /* AVFoundation.framework in Frameworks */,
+				7F6A714CB66CC68325B2D7DB /* Pods_NasdaqTV.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92647AAD1F08AE2B0010535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B576A4B2F931BB9A6510A9D8 /* Pods_NasdaqTVTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92647AB81F08AE2C0010535E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCDACF182D2C03DF097A147B /* Pods_NasdaqTVUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C5B3461F15B5A900490866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C5B34C1F15B5AA00490866 /* TVServices.framework in Frameworks */,
+				8AF402A72BD0D3548C03C097 /* Pods_Preview.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92647A961F08AE2B0010535E = {
+			isa = PBXGroup;
+			children = (
+				92647AA11F08AE2B0010535E /* NasdaqTV */,
+				92647AB31F08AE2B0010535E /* NasdaqTVTests */,
+				92647ABE1F08AE2C0010535E /* NasdaqTVUITests */,
+				B3C5B34D1F15B5AA00490866 /* Preview */,
+				B3C5B34A1F15B5AA00490866 /* Frameworks */,
+				92647AA01F08AE2B0010535E /* Products */,
+				F0F89BD1D890662125C0BC6D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		92647AA01F08AE2B0010535E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92647A9F1F08AE2B0010535E /* NasdaqTV.app */,
+				92647AB01F08AE2B0010535E /* NasdaqTVTests.xctest */,
+				92647ABB1F08AE2C0010535E /* NasdaqTVUITests.xctest */,
+				B3C5B3491F15B5A900490866 /* Preview.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92647AA11F08AE2B0010535E /* NasdaqTV */ = {
+			isa = PBXGroup;
+			children = (
+				B3B7ECDA1F16242500608CE6 /* SSYoutubeParser.swift */,
+				92647AA21F08AE2B0010535E /* AppDelegate.swift */,
+				92647AA41F08AE2B0010535E /* ViewController.swift */,
+				92647ACD1F08B13A0010535E /* MovieCell.swift */,
+				920D4C431F0FBCF3009DF592 /* Movie.swift */,
+				B3D16FC71F149A4200DD4DA7 /* DetailViewController.swift */,
+				B3B7ECDC1F1624DB00608CE6 /* PlayerViewController.swift */,
+				92647AA61F08AE2B0010535E /* Main.storyboard */,
+				B3C5B34E1F15B5AA00490866 /* ServiceProvider.swift */,
+				92647AA91F08AE2B0010535E /* Assets.xcassets */,
+				92647AAB1F08AE2B0010535E /* Info.plist */,
+			);
+			name = NasdaqTV;
+			path = test;
+			sourceTree = "<group>";
+		};
+		92647AB31F08AE2B0010535E /* NasdaqTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				92647AB41F08AE2B0010535E /* NasdaqTVTests.swift */,
+				92647AB61F08AE2B0010535E /* Info.plist */,
+			);
+			name = NasdaqTVTests;
+			path = testTests;
+			sourceTree = "<group>";
+		};
+		92647ABE1F08AE2C0010535E /* NasdaqTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92647ABF1F08AE2C0010535E /* NasdaqTVUITests.swift */,
+				92647AC11F08AE2C0010535E /* Info.plist */,
+			);
+			name = NasdaqTVUITests;
+			path = testUITests;
+			sourceTree = "<group>";
+		};
+		B3C5B34A1F15B5AA00490866 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B7ECE01F16255000608CE6 /* AVFoundation.framework */,
+				B3C5B34B1F15B5AA00490866 /* TVServices.framework */,
+				9BB0E58F3D6062D2817540FF /* Pods_NasdaqTV.framework */,
+				484BFDBF06447A8BBF469EFA /* Pods_NasdaqTVTests.framework */,
+				B4A13B55EA2E51A813CC5484 /* Pods_NasdaqTVUITests.framework */,
+				141E7DEE61F63D0ABE5748A2 /* Pods_Preview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3C5B34D1F15B5AA00490866 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				B3C5B3501F15B5AA00490866 /* Info.plist */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		F0F89BD1D890662125C0BC6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61E5E71996BAAB6B2ED34505 /* Pods-NasdaqTV.debug.xcconfig */,
+				C2D9577CAD73FC5F3967A2BD /* Pods-NasdaqTV.release.xcconfig */,
+				9708DAD91E8FB232AA796600 /* Pods-NasdaqTVTests.debug.xcconfig */,
+				6DCA4F85D5F24F5B16257C69 /* Pods-NasdaqTVTests.release.xcconfig */,
+				3A51BBA204D11BD5E67259A1 /* Pods-NasdaqTVUITests.debug.xcconfig */,
+				038AC963DEEB35E057684E2F /* Pods-NasdaqTVUITests.release.xcconfig */,
+				1BA5F3E776536D10D416AD1F /* Pods-Preview.debug.xcconfig */,
+				B6729BD3FF9E38F6A9E21B8F /* Pods-Preview.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92647A9E1F08AE2B0010535E /* NasdaqTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92647AC41F08AE2C0010535E /* Build configuration list for PBXNativeTarget "NasdaqTV" */;
+			buildPhases = (
+				A72BC8B47958D00DD6E7B5E1 /* [CP] Check Pods Manifest.lock */,
+				92647A9B1F08AE2B0010535E /* Sources */,
+				92647A9C1F08AE2B0010535E /* Frameworks */,
+				92647A9D1F08AE2B0010535E /* Resources */,
+				B3C5B3571F15B5AA00490866 /* Embed App Extensions */,
+				BA87150B0AD6DC85DE434FBA /* [CP] Embed Pods Frameworks */,
+				4283935D6CCF610C9875C0F3 /* [CP] Copy Pods Resources */,
+				B3B7ECD91F161BD100608CE6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3C5B3521F15B5AA00490866 /* PBXTargetDependency */,
+			);
+			name = NasdaqTV;
+			productName = test;
+			productReference = 92647A9F1F08AE2B0010535E /* NasdaqTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92647AAF1F08AE2B0010535E /* NasdaqTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92647AC71F08AE2C0010535E /* Build configuration list for PBXNativeTarget "NasdaqTVTests" */;
+			buildPhases = (
+				B61DC1F1DC8AF4D7C439D584 /* [CP] Check Pods Manifest.lock */,
+				92647AAC1F08AE2B0010535E /* Sources */,
+				92647AAD1F08AE2B0010535E /* Frameworks */,
+				92647AAE1F08AE2B0010535E /* Resources */,
+				4B8F9D726365FE79AB299BC7 /* [CP] Embed Pods Frameworks */,
+				0F8645A5D8F1AC79BEAFB8B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92647AB21F08AE2B0010535E /* PBXTargetDependency */,
+			);
+			name = NasdaqTVTests;
+			productName = testTests;
+			productReference = 92647AB01F08AE2B0010535E /* NasdaqTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92647ABA1F08AE2C0010535E /* NasdaqTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92647ACA1F08AE2C0010535E /* Build configuration list for PBXNativeTarget "NasdaqTVUITests" */;
+			buildPhases = (
+				BA9AD65A768FB6FDAECC8846 /* [CP] Check Pods Manifest.lock */,
+				92647AB71F08AE2C0010535E /* Sources */,
+				92647AB81F08AE2C0010535E /* Frameworks */,
+				92647AB91F08AE2C0010535E /* Resources */,
+				037AEAC1BB6B6413B19DC61E /* [CP] Embed Pods Frameworks */,
+				28DDA222B50BBC726F81D0EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92647ABD1F08AE2C0010535E /* PBXTargetDependency */,
+			);
+			name = NasdaqTVUITests;
+			productName = testUITests;
+			productReference = 92647ABB1F08AE2C0010535E /* NasdaqTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B3C5B3481F15B5A900490866 /* Preview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3C5B3561F15B5AA00490866 /* Build configuration list for PBXNativeTarget "Preview" */;
+			buildPhases = (
+				B54D38F324911BFDFC846C07 /* [CP] Check Pods Manifest.lock */,
+				B3C5B3451F15B5A900490866 /* Sources */,
+				B3C5B3461F15B5A900490866 /* Frameworks */,
+				B3C5B3471F15B5A900490866 /* Resources */,
+				D104F09CA7973C932EF0738F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Preview;
+			productName = Preview;
+			productReference = B3C5B3491F15B5A900490866 /* Preview.appex */;
+			productType = "com.apple.product-type.tv-app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92647A971F08AE2B0010535E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = nasdaq;
+				TargetAttributes = {
+					92647A9E1F08AE2B0010535E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5Q8WUF76CC;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					92647AAF1F08AE2B0010535E = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92647A9E1F08AE2B0010535E;
+					};
+					92647ABA1F08AE2C0010535E = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 92647A9E1F08AE2B0010535E;
+					};
+					B3C5B3481F15B5A900490866 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5Q8WUF76CC;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 92647A9A1F08AE2B0010535E /* Build configuration list for PBXProject "NasdaqTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92647A961F08AE2B0010535E;
+			productRefGroup = 92647AA01F08AE2B0010535E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92647A9E1F08AE2B0010535E /* NasdaqTV */,
+				92647AAF1F08AE2B0010535E /* NasdaqTVTests */,
+				92647ABA1F08AE2C0010535E /* NasdaqTVUITests */,
+				B3C5B3481F15B5A900490866 /* Preview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92647A9D1F08AE2B0010535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92647AAA1F08AE2B0010535E /* Assets.xcassets in Resources */,
+				92647AA81F08AE2B0010535E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92647AAE1F08AE2B0010535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92647AB91F08AE2C0010535E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C5B3471F15B5A900490866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		037AEAC1BB6B6413B19DC61E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasdaqTVUITests/Pods-NasdaqTVUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F8645A5D8F1AC79BEAFB8B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasdaqTVTests/Pods-NasdaqTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28DDA222B50BBC726F81D0EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasdaqTVUITests/Pods-NasdaqTVUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4283935D6CCF610C9875C0F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasdaqTV/Pods-NasdaqTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B8F9D726365FE79AB299BC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasdaqTVTests/Pods-NasdaqTVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72BC8B47958D00DD6E7B5E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B54D38F324911BFDFC846C07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B61DC1F1DC8AF4D7C439D584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA87150B0AD6DC85DE434FBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NasdaqTV/Pods-NasdaqTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9AD65A768FB6FDAECC8846 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D104F09CA7973C932EF0738F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Preview/Pods-Preview-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92647A9B1F08AE2B0010535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B7ECDB1F16242500608CE6 /* SSYoutubeParser.swift in Sources */,
+				92647AA51F08AE2B0010535E /* ViewController.swift in Sources */,
+				92647AA31F08AE2B0010535E /* AppDelegate.swift in Sources */,
+				B3B7ECDD1F1624DB00608CE6 /* PlayerViewController.swift in Sources */,
+				B3D16FC81F149A4200DD4DA7 /* DetailViewController.swift in Sources */,
+				920D4C441F0FBCF3009DF592 /* Movie.swift in Sources */,
+				92647ACE1F08B13A0010535E /* MovieCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92647AAC1F08AE2B0010535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92647AB51F08AE2B0010535E /* NasdaqTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92647AB71F08AE2C0010535E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92647AC01F08AE2C0010535E /* NasdaqTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3C5B3451F15B5A900490866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C5B34F1F15B5AA00490866 /* ServiceProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92647AB21F08AE2B0010535E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92647A9E1F08AE2B0010535E /* NasdaqTV */;
+			targetProxy = 92647AB11F08AE2B0010535E /* PBXContainerItemProxy */;
+		};
+		92647ABD1F08AE2C0010535E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92647A9E1F08AE2B0010535E /* NasdaqTV */;
+			targetProxy = 92647ABC1F08AE2C0010535E /* PBXContainerItemProxy */;
+		};
+		B3C5B3521F15B5AA00490866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3C5B3481F15B5A900490866 /* Preview */;
+			targetProxy = B3C5B3511F15B5AA00490866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92647AA61F08AE2B0010535E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92647AA71F08AE2B0010535E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92647AC21F08AE2C0010535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		92647AC31F08AE2C0010535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92647AC51F08AE2C0010535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E5E71996BAAB6B2ED34505 /* Pods-NasdaqTV.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5Q8WUF76CC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.tvosapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		92647AC61F08AE2C0010535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D9577CAD73FC5F3967A2BD /* Pods-NasdaqTV.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 5Q8WUF76CC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.tvosapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		92647AC81F08AE2C0010535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9708DAD91E8FB232AA796600 /* Pods-NasdaqTVTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.testTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasdaqTV.app/NasdaqTV";
+			};
+			name = Debug;
+		};
+		92647AC91F08AE2C0010535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCA4F85D5F24F5B16257C69 /* Pods-NasdaqTVTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.testTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NasdaqTV.app/NasdaqTV";
+			};
+			name = Release;
+		};
+		92647ACB1F08AE2C0010535E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A51BBA204D11BD5E67259A1 /* Pods-NasdaqTVUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.testUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = test;
+			};
+			name = Debug;
+		};
+		92647ACC1F08AE2C0010535E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038AC963DEEB35E057684E2F /* Pods-NasdaqTVUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.testUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = test;
+			};
+			name = Release;
+		};
+		B3C5B3541F15B5AA00490866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA5F3E776536D10D416AD1F /* Pods-Preview.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5Q8WUF76CC;
+				INFOPLIST_FILE = Preview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.tvosapp.Preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B3C5B3551F15B5AA00490866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6729BD3FF9E38F6A9E21B8F /* Pods-Preview.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5Q8WUF76CC;
+				INFOPLIST_FILE = Preview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nasdaq.tvosapp.Preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92647A9A1F08AE2B0010535E /* Build configuration list for PBXProject "NasdaqTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92647AC21F08AE2C0010535E /* Debug */,
+				92647AC31F08AE2C0010535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92647AC41F08AE2C0010535E /* Build configuration list for PBXNativeTarget "NasdaqTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92647AC51F08AE2C0010535E /* Debug */,
+				92647AC61F08AE2C0010535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92647AC71F08AE2C0010535E /* Build configuration list for PBXNativeTarget "NasdaqTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92647AC81F08AE2C0010535E /* Debug */,
+				92647AC91F08AE2C0010535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92647ACA1F08AE2C0010535E /* Build configuration list for PBXNativeTarget "NasdaqTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92647ACB1F08AE2C0010535E /* Debug */,
+				92647ACC1F08AE2C0010535E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3C5B3561F15B5AA00490866 /* Build configuration list for PBXNativeTarget "Preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3C5B3541F15B5AA00490866 /* Debug */,
+				B3C5B3551F15B5AA00490866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92647A971F08AE2B0010535E /* Project object */;
+}
